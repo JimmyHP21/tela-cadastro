@@ -5,7 +5,7 @@
  */
 package br.com.unip;
 
-import br.com.unip.dao.EnumUF;
+import enums.EnumUF;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
