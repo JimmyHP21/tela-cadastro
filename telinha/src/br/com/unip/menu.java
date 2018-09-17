@@ -84,7 +84,6 @@ public class menu extends JFrame{
     public void eventos() {
         mi_abrir.addActionListener((e) -> {
             JOptionPane.showMessageDialog(null, "Abrindo..");
-            //Veja que eu relativei o caminho.
 
         });
 
