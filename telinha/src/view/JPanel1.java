@@ -5,7 +5,7 @@
  */
 package view;
 
-import br.com.unip.dao.TamanhoFixoJTextField;
+import dao.TamanhoFixoJTextField;
 import java.text.ParseException;
 import javax.swing.JButton;
 import javax.swing.JCheckBoxMenuItem;
