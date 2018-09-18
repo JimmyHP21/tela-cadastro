@@ -47,7 +47,7 @@ public class menu extends JFrame{
         barraMenu = new JMenuBar();
         setJMenuBar(barraMenu);
         
-        menu_arquivo = new JMenu("Arquivo");
+        menu_arquivo = new JMenu("Cadastro");
         menu_opcoes = new JMenu("Opções");
         
         barraMenu.add(menu_arquivo);
