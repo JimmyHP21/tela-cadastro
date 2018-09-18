@@ -95,23 +95,23 @@ public final class TelaPrincipal extends JFrame {
         barraMenu.add(menu_remover);
         barraMenu.add(menu_sair);
 
-        cd_pessoa = new JMenuItem(" Cliente ");
+        cd_pessoa = new JMenuItem("   Cliente   ");
         menu_cadastro.add(cd_pessoa);
 
-        cd_fornecedor = new JMenuItem(" Fornecedor ");
+        cd_fornecedor = new JMenuItem("   Fornecedor   ");
         menu_cadastro.add(cd_fornecedor);
 
-        cd_form_pag = new JMenuItem(" Forma de Pagamento ");
+        cd_form_pag = new JMenuItem("   Forma de Pagamento   ");
         menu_cadastro.add(cd_form_pag);
 
-        cd_usuario = new JMenuItem(" Usuário ");
+        cd_usuario = new JMenuItem("   Usuário   ");
         menu_cadastro.add(cd_usuario);
 
         //MENU MOVIMENTACAO 
-        mv_venda = new JMenuItem(" Venda ");
+        mv_venda = new JMenuItem("   Venda   ");
         menu_remover.add(mv_venda);
 
-        mv_compra = new JMenuItem(" Compra ");
+        mv_compra = new JMenuItem("   Compra   ");
         menu_remover.add(mv_compra);
 
     }
