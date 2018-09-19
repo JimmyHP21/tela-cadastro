@@ -6,11 +6,13 @@
 package conexao;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author Leonardo Zanaro
+ * @author Renan Peres
  */
 public class Conexao {
 
@@ -20,23 +22,30 @@ public class Conexao {
     private static final String SENHA = "1999";
 
     private static Connection conexao;
-    PreparedStatement stm = null;
 
-    public static String getDRIVER() {
-        return DRIVER;
+    public Conexao() {
+        try {
+            Class.forName(DRIVER);
+            conexao = DriverManager.getConnection(BANCO, USUARIO, SENHA);
+        } catch (ClassNotFoundException ex) {
+            JOptionPane.showMessageDialog(null, "Erro na Classe de Conexao do Banco. \n" + ex.getMessage());
+            conexao = null;
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro ao conectar no banco.\n" + ex.getMessage());
+            conexao = null;
+        }
     }
 
-    public static String getBANCO() {
-        return BANCO;
+    public static Connection getConexao() {
+        return conexao;
     }
 
-    public static String getUSUARIO() {
-        return USUARIO;
+    public void fecharConexao() {
+        try {
+            conexao.close();
+        } catch (SQLException ex) {
+            System.out.println("Falha ao fechar conexao.\n" + ex.getMessage());
+        }
     }
 
-    public static String getSENHA() {
-        return SENHA;
-    }
-
-    
 }

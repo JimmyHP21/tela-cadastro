@@ -31,6 +31,7 @@ public class Pessoa {
     private String PES_SITE;
     private String PES_EMAIL;
     private char PES_ATIVO;
+    private boolean i;
     
     public Pessoa() {
     }
@@ -217,7 +218,13 @@ public class Pessoa {
     }
 
     public void setPES_ATIVO(char PES_ATIVO) {
-        this.PES_ATIVO = PES_ATIVO;
+        
+        if(i == true){
+        this.PES_ATIVO = 'S';    
+        }else{
+            this.PES_ATIVO = 'N';
+        }
+        
     }
     
     

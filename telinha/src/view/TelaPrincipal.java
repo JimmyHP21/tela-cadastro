@@ -21,6 +21,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
 
 /**
  *
@@ -57,7 +58,7 @@ public final class TelaPrincipal extends JFrame {
             cardLayout = new CardLayout();
             painelCardLayout = new JPanel();
             painelCardLayout.setLayout(cardLayout);
-            painelCardLayout.add(new JPanel1(), "panel1");
+            painelCardLayout.add(new PessoaView(), "panel1");
             painelCardLayout.add(new JPanel2(), "panel2");
             painelCardLayout.add(new JPanel(), "principal");
             cardLayout.show(painelCardLayout, "principal");
