@@ -10,17 +10,18 @@ package model;
  * @author renanperes
  */
 public class Cliente {
+
     private int CLI_CODIGO;
-    private int FK_PES_CODIGO;
-    private float CLI_LIMITECRED;  
-    
-    public Cliente(){
-        
+    private int PES_CODIGO;
+    private float CLI_LIMITECRED;
+
+    public Cliente() {
+
     }
-    
-    public Cliente(int CLI_CODIGO,int FK_PES_CODIGO,float CLI_LIMITECRED){
+
+    public Cliente(int CLI_CODIGO, int PES_CODIGO, float CLI_LIMITECRED) {
         this.CLI_CODIGO = CLI_CODIGO;
-        this.FK_PES_CODIGO = FK_PES_CODIGO;
+        this.PES_CODIGO = PES_CODIGO;
         this.CLI_LIMITECRED = CLI_LIMITECRED;
     }
 
@@ -32,12 +33,12 @@ public class Cliente {
         this.CLI_CODIGO = CLI_CODIGO;
     }
 
-    public int getFK_PES_CODIGO() {
-        return FK_PES_CODIGO;
+    public int getPES_CODIGO() {
+        return PES_CODIGO;
     }
 
-    public void setFK_PES_CODIGO(int FK_PES_CODIGO) {
-        this.FK_PES_CODIGO = FK_PES_CODIGO;
+    public void setPES_CODIGO(int PES_CODIGO) {
+        this.PES_CODIGO = PES_CODIGO;
     }
 
     public float getCLI_LIMITECRED() {
@@ -47,7 +48,5 @@ public class Cliente {
     public void setCLI_LIMITECRED(float CLI_LIMITECRED) {
         this.CLI_LIMITECRED = CLI_LIMITECRED;
     }
-    
-    
-    
+
 }

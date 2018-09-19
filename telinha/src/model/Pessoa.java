@@ -14,7 +14,7 @@ public class Pessoa {
     private Integer PES_CODIGO;
     private String PES_NOME;
     private String PES_FANTASIA;
-    private char PES_FISICA;
+    private String PES_FISICA;
     private String PES_CPFCNPJ;
     private String PES_RGIE;
     private String PES_CADASTRO;
@@ -35,7 +35,7 @@ public class Pessoa {
     public Pessoa() {
     }
     
-    public Pessoa(Integer PES_CODIGO, String PES_NOME, String PES_FANTASIA, char PES_FISICA, String PES_CPFCNPJ, 
+    public Pessoa(Integer PES_CODIGO, String PES_NOME, String PES_FANTASIA, String PES_FISICA, String PES_CPFCNPJ, 
             String PES_RGIE, String PES_CADASTRO, String PES_ENDERECO,String PES_NUMERO, String PES_COMPLEMENTO,
             String PES_BAIRRO,String PES_CIDADE,String PES_UF,String PES_CEP, String PES_FONE1,String PES_FONE2, 
             String PES_CELULAR,String PES_SITE,String PES_EMAIL,char PES_ATIVO) {
@@ -84,11 +84,11 @@ public class Pessoa {
         this.PES_FANTASIA = PES_FANTASIA;
     }
 
-    public char getPES_FISICA() {
+    public String getPES_FISICA() {
         return PES_FISICA;
     }
 
-    public void setPES_FISICA(char PES_FISICA) {
+    public void setPES_FISICA(String PES_FISICA) {
         this.PES_FISICA = PES_FISICA;
     }
 

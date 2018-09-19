@@ -19,7 +19,7 @@ public class Conexao {
     private static final String USUARIO = "SYSTEM";
     private static final String SENHA = "1999";
 
-    Connection conexao = null;
+    private static Connection conexao;
     PreparedStatement stm = null;
 
     public static String getDRIVER() {
